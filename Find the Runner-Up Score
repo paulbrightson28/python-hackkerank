@@ -1,0 +1,16 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    list=[]
+    ulist=[]
+    for i in arr:
+        l=i
+        list.append(l)
+    for i in list:
+        if i not in ulist:
+            ulist.append(i)
+    a=max(ulist)
+    b=ulist.index(a)
+    c=ulist.pop(b)
+    d=max(ulist)
+    print(d)
